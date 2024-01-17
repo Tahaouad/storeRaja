@@ -1,8 +1,7 @@
 import './App.css';
 import Products from './components/Products';
-import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import {   Route, Routes, HashRouter } from 'react-router-dom';
 import ProductsDetails from './components/ProductsDetails';
-import { Navbar } from 'react-bootstrap';
 const products = [
   {
     id: 1,
@@ -129,7 +128,12 @@ const products = [
 
 function App() {
   return (
-    <Navbar />
+    <HashRouter >
+      <Routes>
+        <Route path='/' index element={<Products products={products}/>}/>
+        <Route path='/ProductsDetails/:id'  element={<ProductsDetails products={products}/>}/>
+      </Routes>
+    </HashRouter>
   );
 }
 
