@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/storeRaja/static/css/main.3cf6eb40.css",
-    "main.js": "/storeRaja/static/js/main.231a03e6.js",
+    "main.js": "/storeRaja/static/js/main.4ddfdfe1.js",
     "static/js/787.d0195def.chunk.js": "/storeRaja/static/js/787.d0195def.chunk.js",
     "static/media/cover.PNG": "/storeRaja/static/media/cover.32823dff80562d138d99.PNG",
     "static/media/tenues-cat-1.png": "/storeRaja/static/media/tenues-cat-1.0d401a0f38ccc8313e8b.png",
@@ -48,11 +48,11 @@
     "static/media/slick.woff": "/storeRaja/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/storeRaja/index.html",
     "main.3cf6eb40.css.map": "/storeRaja/static/css/main.3cf6eb40.css.map",
-    "main.231a03e6.js.map": "/storeRaja/static/js/main.231a03e6.js.map",
+    "main.4ddfdfe1.js.map": "/storeRaja/static/js/main.4ddfdfe1.js.map",
     "787.d0195def.chunk.js.map": "/storeRaja/static/js/787.d0195def.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3cf6eb40.css",
-    "static/js/main.231a03e6.js"
+    "static/js/main.4ddfdfe1.js"
   ]
 }
