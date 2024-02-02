@@ -25,29 +25,31 @@ const Products = ({ products }) => {
         <h6 className='text-center text-muted fw-lighter'>Latest trends from Raja</h6>
 
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-4 mt-2">
-          {products.slice(0, showAllProducts ? products.length : 8).map((product) => (
-            <div className="col mb-3" key={product.id}>
-              <div className="card h-100 p-2">
-                <Link to={`/ProductsDetails/${product.id}`} onClick={(e) => e.stopPropagation()}>
-                  <img
-                    src={require(`../images/${product.image}`)}
-                    alt={product.libelle}
-                    className="card-img-top img-fluid"
-                  />
+        {products.slice(0, showAllProducts ? products.length : 8).map((product) => (
+          <div className="col mb-3" key={product.id}>
+            <div className="card h-100 p-2">
+              <Link to={`/ProductsDetails/${product.id}`} onClick={(e) => e.stopPropagation()}>
+                <img
+                  src={require(`../images/${product.image}`)}
+                  alt={product.libelle}
+                  className="card-img-top img-fluid"
+                />
+              </Link>
+
+              <div className="card-body d-flex flex-column">
+                <h4 className="card-title">
+                  {product.libelle.length > 24 ? `${product.libelle.slice(0, 25)}...` : product.libelle}
+                </h4>
+                <h6 className="card-subtitle mb-2 fw-bolder fs-5 text-success">{product.prix}</h6>
+
+                <Link to={`/ProductsDetails/${product.id}`}>
+                  <button className="btn btn-success mt-auto w-100">Buy</button>
                 </Link>
-
-                <div className="card-body d-flex flex-column">
-                  <h4 className="card-title">{product.libelle}</h4>
-                  <h6 className="card-subtitle mb-2 fw-bolder fs-5 text-success">{product.prix}</h6>
-
-                  <Link to={`/ProductsDetails/${product.id}`}>
-                    <button className="btn btn-success mt-auto w-100">Buy</button>
-                  </Link>
-                </div>
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
+      </div>
         <div className='d-flex justify-content-center'>
           <button className='btn btn-outline-success m-3' onClick={() => setShowAllProducts(!showAllProducts)}>
             {showAllProducts ? 'Show Less' : 'Show All'}
