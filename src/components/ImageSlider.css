@@ -1,0 +1,22 @@
+.slider-image {
+    object-fit: cover;
+    will-change: transform;
+  }
+  
+  @media screen and (max-width: 768px) {
+    
+    .slider-image{
+        height: 30vh;
+        width: 100%;
+
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .slider-image {
+        height: 85vh;
+        width: 100%;
+    }
+  }
+  
+
+  

@@ -1,6 +1,16 @@
-import React from 'react';
-
+import React, { useEffect } from 'react';
+import './ImageSlider.css'
 const ImageSlider = () => {
+  useEffect(() => {
+    const preloadImages = () => {
+      ['../images/slide-3-1.png', '../images/slide-a-1.png', '../images/slide-b-1.png'].forEach((image) => {
+        new Image().src = image;
+      });
+    };
+
+    preloadImages();
+  }, []);
+
   return (
     <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
       <div className="carousel-indicators">
@@ -10,13 +20,13 @@ const ImageSlider = () => {
       </div>
       <div className="carousel-inner">
         <div className="carousel-item active">
-          <img src={require('../images/slide-3-1.png')} className="d-block w-100" alt="Slide 1" />
+          <img src={require('../images/slide-3-1.png')} className="d-block   slider-image" alt="Slide 1" />
         </div>
         <div className="carousel-item">
-          <img src={require('../images/slide-a-1.png')} className="d-block w-100" alt="Slide 2" />
+          <img src={require('../images/slide-a-1.png')} className="d-block  slider-image" alt="Slide 2" />
         </div>
         <div className="carousel-item">
-          <img src={require('../images/slide-b-1.png')} className="d-block w-100" alt="Slide 3" />
+          <img src={require('../images/slide-b-1.png')} className="d-block  slider-image" alt="Slide 3" />
         </div>
       </div>
       <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

@@ -1,0 +1,23 @@
+/* Ajoutez ces styles dans votre fichier CSS ou dans le style de votre composant */
+
+/* Styles par défaut */
+.cover-image {
+    width: 100%;
+  }
+  
+  /* Styles pour les écrans plus petits (ajustez les valeurs en conséquence) */
+  @media screen and (max-width: 768px) {
+    .cover-image {
+      height: 200px;
+      /* Ajoutez d'autres styles au besoin */
+    }
+  }
+  
+  /* Styles pour les écrans plus grands */
+  @media screen and (min-width: 1200px) {
+    .cover-image {
+      height: 400px;
+      /* Ajoutez d'autres styles au besoin */
+    }
+  }
+  

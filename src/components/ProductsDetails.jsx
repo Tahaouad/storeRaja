@@ -63,16 +63,16 @@ const ProductDetails = ({ products }) => {
               {
 
                 (tailles[0] !== 'Taille unique') &&
-                <div className="d-flex ">
+                <div className="d-flex justify-content-between">
 
-                  <h4 className="fs-6 fw-light mt-2 col-md-11">Tailles :</h4>
+                  <h4 className="fs-6 fw-light mt-2 mr-4 col-md-11">Tailles :</h4>
                   <hr />
 
                   {tailles.map((size) => (
                     <button
                       key={size}
                       type="button"
-                      className={`btn btn-outline-success border col-md-3 " ${selectedSize === size ? "active" : ""
+                      className={`btn btn-outline-success border m-1 col-md-3 " ${selectedSize === size ? "active" : ""
                         }`}
                       onClick={() => handleSizeChange(size)}
                     >

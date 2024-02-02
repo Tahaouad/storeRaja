@@ -1,0 +1,7 @@
+.slick-slide {
+    width: 100%; /* Faites en sorte que chaque slide occupe la largeur complète */
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
+    padding: 0 10px; /* Espace entre chaque slide (ajustez selon vos préférences) */
+    overflow: hidden;
+  }
+  

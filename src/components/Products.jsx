@@ -5,6 +5,7 @@ import ImageSlider from './ImageSlider';
 import ProductSlider from './ProductsSlide';
 import Decouvrir from './Decouvrir';
 import Footer from './Footer';
+import './Products.css'
 
 const Products = ({ products }) => {
   const duplicatedProducts = [...products, ...products];
@@ -14,9 +15,10 @@ const Products = ({ products }) => {
     <div className='container-fluid'>
       <Navbar />
       <ImageSlider images={['slide-a-1.png', 'slide-3-1.png', 'slide-b-1.png']} />
+
       <ProductSlider items={duplicatedProducts} />
 
-      <img src={require('../images/cover.PNG')} alt="" className="img-fluid" />
+      <img src={require('../images/cover.PNG')} alt="" className="cover-image" />
 
       <div className="container-fluid mt-5">
         <h1 className='text-center text-success fw-bold'>EXPLORATION EXCLUSIVE</h1>

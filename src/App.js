@@ -63,7 +63,7 @@ const products = [
     id: 8,
     reference: 'SKC-008',
     image: 'sac.png',
-    libelle: 'Sac de Voyage Keepall en Cuir',
+    libelle: 'Sac de Voyage Keepall Cuir',
     prix: '1490.00 DH',
     tailles: ['Taille unique']
   },

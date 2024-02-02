@@ -4,34 +4,52 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function Decouvrir(props) {
   const containerStyle = {
     position: 'relative',
-    height: '500px',
+    height: '380px',
+    width: '500px',
     margin: '0',
   };
 
   const backgroundStyle = {
     background: 'linear-gradient(to top, #000000, #333333)',
-    backgroundSize: 'cover',
+    backgroundSize: 'contain', 
+    backgroundRepeat: 'no-repeat',
     height: '100%',
+    width: '100%',
   };
 
   const buttonStyle = {
     position: 'absolute',
-    top: 10,
-    right: 10,
+    top: '10px',
+    right: '20px',
     padding: '1rem',
     zIndex: 2,
-    margin: '10px',
   };
 
   const imageStyle1 = {
     backgroundImage: `url(${require('../images/tenues-cat-1.png')})`,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    width: '100%',
+    height: '100%',
   };
 
   const imageStyle2 = {
     backgroundImage: `url(${require('../images/entrainement-cat-1.png')})`,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    width: '100%',
+    height: '100%',
   };
+
   const imageStyle3 = {
     backgroundImage: `url(${require('../images/cadeaux-cat-1.png')})`,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    width: '100%',
+    height: '100%',
   };
 
   return (
