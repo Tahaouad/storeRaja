@@ -5,13 +5,13 @@ function Decouvrir(props) {
   const containerStyle = {
     position: 'relative',
     height: '380px',
-    width: '500px',
+    width: '100%', // Set the width to 100% to take the entire width of the screen
     margin: '0',
   };
 
   const backgroundStyle = {
     background: 'linear-gradient(to top, #000000, #333333)',
-    backgroundSize: 'contain', 
+    backgroundSize: 'contain',
     backgroundRepeat: 'no-repeat',
     height: '100%',
     width: '100%',
